@@ -1,4 +1,6 @@
 @import 'variable'
+@import 'normalize'
+@import "modules/fonts"
 
 html
 	font-size: 16
@@ -6,7 +8,7 @@ html
 	line-height: 1.3
 
 body
-	font-family: mainFont
+	font-family: $regular
 	height: 100%
 
 h1,h2,h3,h4,h5,h6
@@ -50,12 +52,9 @@ button
 .header
 	width: 100%
 	max-width: 1170px
-	display: flex
-	flex-direction: column
-	height: 100%
+	margin: 0 auto
+	padding: 0 15px
 
-.content
-	flex: 1 0 auto
 
 
 //Модули
