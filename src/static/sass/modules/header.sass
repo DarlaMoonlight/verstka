@@ -1,29 +1,51 @@
-.header
+body
+	background: $backgroundColor 0 0 no-repeat
+.header	
+	z-index: 10
+	position: fixed
+	width: 100%
+	max-width: 1170px
+	margin: 0 auto
 	overflow: hidden
 	display: flex
 	flex-direction: row
+	justify-content: space-between
+	padding: 13px $standPadding 11px $standPadding
 .header-logo
-	margin-right: 162px
 	.icon-logo
-		width: 133px
-		height: 64px
+		width: 135px
+		height: 38px
 .header-nav
-.header-nav__list
-	li
-		display: inline-block
-		margin: 21px 13px
-		
-	a 
-		font-family: $regular
-		font-size: 16px
-		text-decoration: none
+	.header-nav__list
+		li
+			display: inline-block
+			margin: 8px 26px 10px 0
+			&:last-child
+				margin-right: 0			
+		a 
+			font-family: $regular
+			font-size: 16px
+			text-decoration: none
 .user-logged
-	margin: 14px 0 15px 160px
+	display: flex
+	flex-direction: row
+	.user-info
 	font-family: $regular
+	padding-top: 1px
 	.user-name
-		float: right
+		float: right		
 		font-size: 14px
 	.user-mail
-		padding-right: 3px
+		padding-right: 2px
 		font-size: 12px
 		color: #a4a3a3
+.user-icon
+	padding-right: 15px	
+	padding-left: 13px	
+	img
+		border-radius: 50px		
+.exit-icon
+	padding-top: 7px	
+	.icon-sign-out
+		width: 24px
+		height: 20px

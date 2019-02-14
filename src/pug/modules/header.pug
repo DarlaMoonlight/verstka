@@ -1,25 +1,27 @@
-header
-	.header
-		.header-logo
-			+icon("logo")
-		nav.header-nav 
-			ul.header-nav__list
-				li
-					a(href="#") About me
-				li
-					a(href="#") Relationships
-				li
-					a(href="#") Requirements
-				li
-					a(href="#") Users
-				li
-					a(href="#") Sign Up
-		.user-logged
-			.user-name Superstar
-			.user-mail Superstar@gmail.com
-		.user-icon
-			+icon("cover-icon-user")
-		.exit-icon
-			+icon()
+header.bg
+	.container
+		.header
+			.header-logo
+				+icon("logo")
+			nav.header-nav 
+				ul.header-nav__list
+					li
+						a(href="#") About me
+					li
+						a(href="#") Relationships
+					li
+						a(href="#") Requirements
+					li
+						a(href="#") Users
+					li
+						a(href="#") Sign Up
+			.user-logged
+				.user-info
+					.user-name Superstar
+					.user-mail Superstar@gmail.com
+				.user-icon
+					img(src="static/img/user-superstar-2x.jpg" width="40px" height="40px")
+				.exit-icon
+					+icon("sign-out")
 
 
