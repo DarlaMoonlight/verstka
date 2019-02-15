@@ -26,11 +26,15 @@ header
 			display: inline-block
 			margin: 8px 26px 10px 0
 			&:last-child
-				margin-right: 0			
+				margin-right: 0
 		a 
 			font-family: $regular
 			font-size: 16px
 			text-decoration: none
+			&:hover
+				cursor: pointer
+				color: $primaryColor
+				
 .user-logged
 	display: flex
 	flex-direction: row
@@ -50,7 +54,9 @@ header
 	img
 		border-radius: 50px		
 .exit-icon
-	padding-top: 7px	
+	padding-top: 7px
 	.icon-sign-out
 		width: 24px
 		height: 20px
+		&:hover
+			cursor: pointer		
